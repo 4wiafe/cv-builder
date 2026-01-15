@@ -1,4 +1,4 @@
-export default function Navigation() {
+export default function Navigation({ menuButton, themeButton }) {
   return (
     <nav>
       <div className="logo">
@@ -13,13 +13,16 @@ export default function Navigation() {
           <a href="#how-it-works" className="link">How It Works</a>
         </li>
         <li className="link-list">
-          <a href="#faq" className="link">FAQ</a>
+          <a href="#signin" className="link">Sign in</a>
+        </li>
+        <li className="link-list">
+          <a href="#signup" className="link">Sign up</a>
         </li>
       </ul>
 
       <div className="nav-btn-container">
-        <button type="button" className="menu-toggle">Menu</button>
-        <button type="button" className="theme-toggle">Theme</button>
+        {menuButton}
+        {themeButton}
       </div>
     </nav>
   );
