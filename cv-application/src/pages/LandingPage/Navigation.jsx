@@ -1,19 +1,19 @@
 import "../../styles/Nav.css";
 
-export default function Navigation({ menuButton, themeButton }) {
+export default function Navigation({ menuButton, themeButton, menuOpen }) {
   return (
     <nav>
       <div className="logo">
         <a href="/">QuickCV.</a>
       </div>
 
-      <ul className="nav-links">
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li className="link-list">
           <a href="#how-it-works" className="link">How It Works</a>
         </li>
         <li className="link-list">
           <a href="#faq" className="link">FAQ</a>
-        </li>
+        </li> 
       </ul>
 
       <div className="nav-btns">

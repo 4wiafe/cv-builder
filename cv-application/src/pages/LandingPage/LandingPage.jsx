@@ -14,6 +14,7 @@ export default function LandingPage({themeMode, handleThemeToggle}) {
 
   return (
     <Navigation
+      menuOpen={isMenuOpen}
       menuButton=
         {
           <ToggleButton 
@@ -28,10 +29,10 @@ export default function LandingPage({themeMode, handleThemeToggle}) {
       
       themeButton={
         <ToggleButton
-          isOn={themeMode === "light"}
+          isOn={themeMode === "dark"}
           onToggle={handleThemeToggle}
-          onIcon={<FontAwesomeIcon icon={faMoon} className="theme-icon" />}
-          offIcon={<FontAwesomeIcon icon={faSun} className="theme-icon" />}
+          onIcon={<FontAwesomeIcon icon={faSun} className="theme-icon" />}
+          offIcon={<FontAwesomeIcon icon={faMoon} className="theme-icon" />}
           buttonClass="theme-btn"
           ariaLabel="Theme button"
         />
