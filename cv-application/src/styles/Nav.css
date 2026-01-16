@@ -1,0 +1,81 @@
+nav {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+  background: var(--border);
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100vh;
+  padding: 20px;
+}
+
+.nav-btns {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-theme {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.link-list {
+  margin: 20px;
+}
+
+.link {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.signin {
+  background: var(--accent);
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.signin:hover {
+  background: var(--accent-hover);
+}
+
+.menu-theme button {
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--icon);
+}

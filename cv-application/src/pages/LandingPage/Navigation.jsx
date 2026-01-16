@@ -1,28 +1,29 @@
+import "../../styles/Nav.css";
+
 export default function Navigation({ menuButton, themeButton }) {
   return (
     <nav>
       <div className="logo">
-        <a href="/">QuickCV</a>
+        <a href="/">QuickCV.</a>
       </div>
 
       <ul className="nav-links">
         <li className="link-list">
-          <a href="/" className="link">Home</a>
-        </li>
-        <li className="link-list">
           <a href="#how-it-works" className="link">How It Works</a>
         </li>
         <li className="link-list">
-          <a href="#signin" className="link">Sign in</a>
-        </li>
-        <li className="link-list">
-          <a href="#signup" className="link">Sign up</a>
+          <a href="#faq" className="link">FAQ</a>
         </li>
       </ul>
 
-      <div className="nav-btn-container">
-        {menuButton}
-        {themeButton}
+      <div className="nav-btns">
+        <div className="signin-container">
+          <a href="#signin" className="signin">Sign in</a>
+        </div>
+        <div className="menu-theme">
+          {menuButton}
+          {themeButton}
+        </div>
       </div>
     </nav>
   );
