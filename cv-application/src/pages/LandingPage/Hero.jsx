@@ -1,4 +1,5 @@
 import CVImage from "../../assets/cv.jpg";
+import "../../styles/Hero.css"
 
 export default function Hero() {
   return (
