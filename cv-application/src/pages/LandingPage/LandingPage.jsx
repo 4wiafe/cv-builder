@@ -8,7 +8,6 @@ import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
 
 export default function LandingPage({themeMode, handleThemeToggle}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [hasOpened, setHasOpened] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(prev => !prev);
