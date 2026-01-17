@@ -18,22 +18,25 @@ a {
 }
 
 .nav-links {
-  display: none;
   list-style: none;
   background: var(--border);
   position: absolute;
   top: 45px;
   left: 0;
   width: 100%;
+  height: 100vh;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 100vh;
   padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .nav-links.active {
-  display: block;
-  animation: slide-left 0.2s ease-out forwards;
+  visibility: visible;
+  pointer-events: auto;
+  animation: menuFadeIn 0.3s ease forwards;
 }
 
 .nav-btns {
@@ -82,18 +85,31 @@ a {
 
 .menu-theme button {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   border: none;
   background: transparent;
   color: var(--icon);
 }
 
-@keyframes slide-left {
+@keyframes menuFadeIn {
   from {
-    transform: translateX(100px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
   }
 }

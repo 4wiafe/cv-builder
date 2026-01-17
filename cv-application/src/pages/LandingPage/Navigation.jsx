@@ -1,18 +1,20 @@
+import { useState } from "react";
 import "../../styles/Nav.css";
 
-export default function Navigation({ menuButton, themeButton, menuOpen }) {
+export default function Navigation({ menuButton, themeButton, menuOpen, onLinkClick }) {
   return (
     <nav>
       <div className="logo">
         <a href="/">QuickCV.</a>
       </div>
 
-      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`
+        }>
         <li className="link-list">
-          <a href="#how-it-works" className="link">How It Works</a>
+          <a href="#how-it-works" className="link" onClick={onLinkClick}>How It Works</a>
         </li>
         <li className="link-list">
-          <a href="#faq" className="link">FAQ</a>
+          <a href="#faq" className="link" onClick={onLinkClick}>FAQ</a>
         </li> 
       </ul>
 
