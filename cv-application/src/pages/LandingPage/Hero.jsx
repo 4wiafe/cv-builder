@@ -9,7 +9,7 @@ export default function Hero() {
         <p>
           Create, customize, and download a clean, job-ready CV with ease. QuickCV helps you focus on your experience while we handle the design.
         </p>
-        <a href="#">Get Started</a>
+        <a href="#" className="cta-btn">Get Started</a>
         <img src={CVImage} alt="CV template" loading="lazy" />
       </header>
     </>
