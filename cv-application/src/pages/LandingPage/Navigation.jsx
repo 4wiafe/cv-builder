@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../../styles/Nav.css";
 
 export default function Navigation({ menuButton, themeButton, menuOpen, onLinkClick }) {
