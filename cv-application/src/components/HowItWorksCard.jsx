@@ -1,4 +1,5 @@
 import Card from "./Card";
+import "../styles/HowItWorksCard.css";
 
 export default function HowItWorksCard({ step, title, description, image }) {
   return (

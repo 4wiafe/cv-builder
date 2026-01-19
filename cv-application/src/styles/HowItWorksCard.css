@@ -1,0 +1,8 @@
+.how-it-works {
+  padding: 10px;
+  border: 1px solid var(--accent);
+}
+
+.how-it-works img {
+  width: 250px;
+}
