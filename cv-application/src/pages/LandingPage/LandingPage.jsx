@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navigation from "./Navigation";
 import Hero from "./Hero";
+import HowItWorks from "./HowItWorks";
 import ToggleButton from "../../components/ToggleButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars,  } from "@fortawesome/free-solid-svg-icons";
@@ -59,6 +60,7 @@ export default function LandingPage({themeMode, handleThemeToggle}) {
       />
       <main>
         <Hero />
+        <HowItWorks />
       </main>
     </>
   );
