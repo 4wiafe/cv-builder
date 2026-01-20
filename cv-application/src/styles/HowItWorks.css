@@ -1,0 +1,10 @@
+#how-it-works {
+  padding: 50px 20px;
+  text-align: center;
+  background: var(--bg);
+}
+
+.how-it-works-title {
+  font-weight: 500;
+  margin-bottom: 50px;
+}

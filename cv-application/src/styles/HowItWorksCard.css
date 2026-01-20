@@ -1,8 +1,30 @@
 .how-it-works {
-  padding: 10px;
-  border: 1px solid var(--accent);
+  padding: 25px 10px;
+  gap: 20px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background: var(--surface);
+  box-shadow: 0px 0px 3px 1px var(--text-primary);
+  -webkit-box-shadow: 0px 0px 3px 1px var(--text-primary);
+  -moz-box-shadow: 0px 0px 3px 1px var(--text-primary);
+}
+
+.card-number {
+  padding: 20px;
+  border: 3px solid var(--text-secondary);
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.card-title {
+  color: var(--accent);
+}
+
+.card-description {
+  color: var(--text-secondary);
 }
 
 .how-it-works img {
   width: 250px;
+  border-radius: 5px;
 }
