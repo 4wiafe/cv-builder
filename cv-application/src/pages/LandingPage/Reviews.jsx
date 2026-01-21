@@ -1,6 +1,7 @@
 import ReviewsCard from "../../components/ReviewsCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-regular-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import "../../styles/Reviews.css";
 
 export default function Reviews() {
   return (
@@ -19,6 +20,7 @@ export default function Reviews() {
           Based on 5,954 reviews
         </p>
       </div>
+      <div className="review-cards">
       <ReviewsCard
         name="Richmond Wiafe"
         review="I created a modern, polished resume in under 30 minutes. The templates are clean, easy to use, and far better than my old resume. Highly recommended."
@@ -33,7 +35,7 @@ export default function Reviews() {
         }
       />
       <ReviewsCard
-        name="Richmond Wiafe"
+        name="Kwabena Olonka"
         review="This tool made presenting my work experience incredibly clear. Exporting to PDF was seamless, and the formatting stayed clean and professional. A must-have for job seekers."
         ratings={
           <>
@@ -59,7 +61,7 @@ export default function Reviews() {
         }
       />
       <ReviewsCard
-        name="Richmond Wiafe"
+        name="Alan Addo"
         review="I needed a professional resume fast for a last-minute application, and this platform delivered. The process was intuitive, and the final result exceeded my expectations."
         ratings={
           <>
@@ -71,6 +73,7 @@ export default function Reviews() {
           </>
         }
       />
+      </div>
     </section>
   );
 }
