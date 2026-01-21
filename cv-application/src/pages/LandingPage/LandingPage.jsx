@@ -62,6 +62,7 @@ export default function LandingPage({themeMode, handleThemeToggle}) {
       <main>
         <Hero />
         <HowItWorks />
+        <Reviews />
       </main>
     </>
   );
