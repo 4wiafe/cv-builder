@@ -67,7 +67,7 @@ export default function Reviews() {
             <FontAwesomeIcon icon={faStar} className="star-icon" />
             <FontAwesomeIcon icon={faStar} className="star-icon" />
             <FontAwesomeIcon icon={faStar} className="star-icon" />
-            <FontAwesomeIcon icon={faStar} className="star-icon" />
+            <FontAwesomeIcon icon={faStar} className="star-icon-nofill" />
           </>
         }
       />
