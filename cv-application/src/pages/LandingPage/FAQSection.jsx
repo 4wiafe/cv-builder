@@ -24,20 +24,23 @@ export default function FAQSection() {
   }
 
   return (
-    <div id="faq-section">
+    <div id="faq">
       <h2>Frenquently Asked Questions</h2>
-
-      {
-        faqs.map((faq, index) => {
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={openIndex === index}
-            onToggle={() => handleToggle(index)}
-          />
-        })
-      }
+      <div className="faq-container">
+        {
+          faqs.map((faq, index) => {
+            return (
+              <FAQItem
+                key={index} 
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openIndex === index}
+                onToggle={() => handleToggle(index)}
+              />
+            );
+          })
+        }
+      </div>
     </div>
   );
 }
