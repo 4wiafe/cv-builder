@@ -1,0 +1,35 @@
+#faq {
+  padding: 10px;
+}
+
+#faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.faq-item{
+  padding: 10px;
+}
+
+.question h3 {
+  color: var(--text-secondary);
+}
+
+.faq-answer {
+  color: var(--text-secondary);
+}
+
+.faq-toggle {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+}

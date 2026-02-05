@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FAQItem from "../../components/FAQItem";
+import "../../styles/FAQ.css";
 
 const faqs = [
   {

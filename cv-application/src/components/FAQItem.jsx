@@ -1,6 +1,7 @@
 import ToggleButon from "./ToggleButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import "../styles/FAQ.css";
 
 export default function FAQItem({ question, answer, isOpen, onToggle }) {
   return (
