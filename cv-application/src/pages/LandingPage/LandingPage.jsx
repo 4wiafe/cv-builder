@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import HowItWorks from "./HowItWorks";
 import Reviews from "./Reviews";
 import FAQSection from "./FAQSection";
+import Footer from "../LandingPage/Footer";
 import ToggleButton from "../../components/ToggleButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars,  } from "@fortawesome/free-solid-svg-icons";
@@ -65,6 +66,7 @@ export default function LandingPage({themeMode, handleThemeToggle}) {
         <HowItWorks />
         <Reviews />
         <FAQSection />
+        <Footer />
       </main>
     </>
   );
