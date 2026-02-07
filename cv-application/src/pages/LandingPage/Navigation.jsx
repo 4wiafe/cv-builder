@@ -18,8 +18,8 @@ export default function Navigation({ menuButton, themeButton, menuOpen, onLinkCl
       </ul>
 
       <div className="nav-btns">
-        <div className="signin-container">
-          <a href="#signin" className="signin">Sign in</a>
+        <div className="cvc-container">
+          <a href="#cvc" className="cvc">Create CV</a>
         </div>
         <div className="menu-theme">
           {menuButton}

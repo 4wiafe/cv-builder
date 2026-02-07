@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faLinkedin, faXTwitter, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import "../../styles/Footer.css";
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
       <div className="qcv-container">
         <h3 className="qcv">Quick CV</h3>
         <a href="#">About us</a>
-        <a href="#">Reviews</a>
+        <a href="#reviews-section">Reviews</a>
       </div>
 
       <div className="socials-container">

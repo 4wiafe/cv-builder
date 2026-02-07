@@ -1,13 +1,20 @@
 header {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 50px 10px;
-  background: var(--border);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  background: var(--border);
 }
 
 header img {
@@ -29,4 +36,58 @@ header p {
 
 .cta-btn:hover {
   background: var(--accent-hover);
+}
+
+@media screen and (min-width: 481px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  .cta-btn  {
+    width: 130px;
+  }  
+
+  header img {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header h1 {
+    font-size: 3.2rem;
+  }
+
+  header p {
+    font-size: 1.3rem;
+  }
+
+  .cta-btn  {
+    width: 140px;
+  }
+
+  header img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  header p {
+    font-size: 1.4rem;
+  }
+
+  .cta-btn  {
+    width: 150px;
+  }
+
+  header img {
+    width: 350px;
+  }
 }

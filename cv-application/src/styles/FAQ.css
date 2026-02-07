@@ -12,6 +12,9 @@
   flex-direction: column;
   gap: 10px;
   padding: 10px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1500px;
 }
 
 .faq-item{
@@ -32,4 +35,34 @@
   border: none;
   background: transparent;
   color: var(--text-secondary);
+}
+
+@media screen and (min-width: 769px) {
+  #faq h2 {
+    font-size: 2rem;
+  }
+
+  .faq-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #faq h2 {
+    font-size: 2.5rem;
+  }
+
+  .faq-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #faq h2 {
+    font-size: 3rem;
+  }
+
+  .faq-container {
+    width: 30%;
+  }
 }

@@ -1,5 +1,7 @@
 nav {
   width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 12px;
   display: flex;
   justify-content: space-between;
@@ -41,10 +43,11 @@ a {
 }
 
 .nav-btns {
-  width: 130px;
+  width: 170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .menu-theme {
@@ -72,7 +75,7 @@ a {
   color: var(--text-secondary);
 }
 
-.signin {
+.cvc {
   background: var(--accent);
   color: #fff;
   padding: 8px;
@@ -80,7 +83,7 @@ a {
   font-weight: 500;
 }
 
-.signin:hover {
+.cvc:hover {
   background: var(--accent-hover);
 }
 
@@ -112,5 +115,40 @@ a {
   to {
     opacity: 0;
     transform: translateY(-10px);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    padding: 0;
+    width: 330px;
+    background: var(--bg);
+    pointer-events: all;
+  }
+
+  .link {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  nav {
+    border-radius: 10px;
   }
 }

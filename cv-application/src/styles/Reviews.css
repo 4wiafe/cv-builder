@@ -56,3 +56,15 @@
   border: 1px solid var(--accent);
   transform: translateY(-3px);
 }
+
+@media screen and (min-width: 769px) {
+  .reviews-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .reviews-title {
+    font-size: 2.5rem;
+  }
+}
